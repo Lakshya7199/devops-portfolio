@@ -1,17 +1,76 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
-  background: #020617;
+  align-items: center;
+  padding: 18px 48px;
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #1e293b;
 }
 
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #e5e7eb;
+  cursor: pointer;
+}
+
+/* Nav links */
 .navbar ul {
   display: flex;
-  gap: 20px;
+  gap: 28px;
   list-style: none;
 }
 
-.logo {
-  font-size: 20px;
-  font-weight: bold;
+.navbar ul li a {
+  font-size: 15px;
+  color: #cbd5f5;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline animation */
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  transition: width 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #e5e7eb;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+/* Active link style (future-ready) */
+.navbar ul li a.active {
+  color: #38bdf8;
+}
+
+.navbar ul li a.active::after {
+  width: 100%;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 24px;
+  }
+
+  .navbar ul {
+    gap: 18px;
+  }
 }

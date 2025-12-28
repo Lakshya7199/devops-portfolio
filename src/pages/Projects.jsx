@@ -8,7 +8,7 @@ function Projects() {
       <div className="project-grid">
         <ProjectCard
           title="AWS OpenSearch Monitoring"
-          description="Real-time alerting using OpenSearch, SNS and Lambda."
+          description="Designed and deployed real-time alerting using OpenSearch, SNS, and Lambda with IAM-based security."
         />
         <ProjectCard
           title="CI/CD with GitHub Actions"
