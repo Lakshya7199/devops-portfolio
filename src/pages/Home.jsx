@@ -6,7 +6,7 @@ function Home() {
       <h2>Hi, I’m Lakshya 👋</h2>
       <p>
         DevOps & Cloud Engineer specializing in AWS, Kubernetes,
-        Terraform, and scalable cloud infrastructure.
+        Terraform, and scalable cloud infrastructure YO.
       </p>
     </section>
   )
