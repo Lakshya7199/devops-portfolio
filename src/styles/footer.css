@@ -1,0 +1,18 @@
+.footer {
+  margin-top: 60px;
+  padding: 20px 40px;
+  text-align: center;
+  background-color: #020617;
+  color: #94a3b8;
+  font-size: 14px;
+  border-top: 1px solid #1e293b;
+}
+
+/* Optional: subtle hover effect for links if you add them later */
+.footer a {
+  color: #e5e7eb;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
