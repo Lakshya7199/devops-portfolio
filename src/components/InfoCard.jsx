@@ -1,13 +1,13 @@
-import "../styles/infoCard.css"
+import "../styles/infoCard.css";
 
-function InfoCard({ title, description, link }) {
+const InfoCard = ({ title, description, onClick }) => {
   return (
-    <a href={link} target="_blank" className="info-card">
+    <div className="info-card" onClick={onClick}>
       <h3>{title}</h3>
       <p>{description}</p>
-      <span>View PDF →</span>
-    </a>
-  )
-}
+      <span className="info-cta">Click to explore →</span>
+    </div>
+  );
+};
 
-export default InfoCard
+export default InfoCard;

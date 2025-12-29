@@ -1,28 +1,53 @@
-import InfoCard from "../components/InfoCard"
+import { useState } from "react";
+import InfoCard from "../components/InfoCard";
+import Modal from "../components/Modal";
+import "../styles/home.css";
 
-function Home() {
+import { researchData } from "../data/researchData";
+import { achievementsData } from "../data/achievementsData";
+import { certificationsData } from "../data/certificationsData";
+
+const Home = () => {
+  const [modalData, setModalData] = useState(null);
+
+  const cards = [researchData, achievementsData, certificationsData];
+
   return (
-    <section id="home" className="home">
-      <h2>Hi, I’m Lakshya 👋</h2>
-      <p>
-        DevOps & Cloud Engineer specializing in AWS, Kubernetes,
-        Terraform, and scalable cloud infrastructure.
-      </p>
+    <>
+      {/* HERO */}
+      <section className="hero fade-in">
+        <h1>Hi, I’m Lakshya 👋</h1>
+        <p>
+          I’m a <strong>DevOps & Cloud Engineer</strong> focused on building
+          reliable, scalable infrastructure using{" "}
+          <strong>AWS, Kubernetes, Terraform</strong>, and modern cloud-native
+          practices.
+        </p>
+      </section>
 
-      <div className="info-grid">
-        <InfoCard
-          title="Research & Deep Dives"
-          description="Technical research and explorations on DevOps, AWS, OpenSearch, and Kubernetes."
-          link="/docs/AWS OpenSearch Integration with IAM Identity Center.pdf"
-        />
-        <InfoCard
-          title="Achievements"
-          description="Certifications, recognitions, and professional milestones."
-          link="/docs/OpenSearch_IAM_Identity_Center_Carousel.pdf"
-        />
-      </div>
-    </section>
-  )
-}
+      {/* CARDS */}
+      <section className="info-section">
+        {cards.map((card, index) => (
+          <InfoCard
+            key={index}
+            title={card.title}
+            description={card.description}
+            onClick={() => setModalData(card)}
+          />
+        ))}
+      </section>
 
-export default Home
+      {/* MODAL */}
+      {modalData && (
+        <Modal
+          title={modalData.title}
+          description={modalData.intro}
+          items={modalData.items}
+          onClose={() => setModalData(null)}
+        />
+      )}
+    </>
+  );
+};
+
+export default Home;
