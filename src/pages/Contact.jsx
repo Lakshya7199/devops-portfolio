@@ -11,35 +11,35 @@ const Contact = () => {
 
       <div className="contact-cards">
         <a
-          href="mailto:lakshya@example.com"
-          className="contact-card"
-        >
+            onClick={() => window.location.href = "mailto:lakshya.datir2001@gmail.com"}
+            className="contact-card"
+            >
           📧
           <span>Email</span>
-          <small>lakshya@example.com</small>
+          <small>lakshya.datir2001@gmail.com</small>
         </a>
 
         <a
-          href="tel:+91XXXXXXXXXX"
+      //     href="tel:+91 7566227525"
           className="contact-card"
         >
           📞
           <span>Phone</span>
-          <small>+91 XXXXX XXXXX</small>
+          <small>+91 7566227525</small>
         </a>
 
         <a
-          href="https://www.linkedin.com/in/your-linkedin"
+          href="https://www.linkedin.com/in/lakshya-datir/"
           target="_blank"
           rel="noopener noreferrer"
           className="contact-card"
         >
           💼
           <span>LinkedIn</span>
-          <small>linkedin.com/in/your-linkedin</small>
+          <small>linkedin.com/in/lakshya-datir/</small>
         </a>
 
-        <a
+        {/* <a
           href="https://github.com/your-github"
           target="_blank"
           rel="noopener noreferrer"
@@ -48,7 +48,7 @@ const Contact = () => {
           🧑‍💻
           <span>GitHub</span>
           <small>github.com/your-github</small>
-        </a>
+        </a> */}
       </div>
     </section>
   );

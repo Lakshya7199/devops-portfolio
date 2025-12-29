@@ -2,25 +2,25 @@ export const certificationsData = {
   title: "Certifications",
   description: "Industry certifications and credentials",
   intro:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur sint occaecat cupidatat non proident.",
+    "",
   items: [
     {
-      title: "AWS Certified Developer – Associate",
+      title: "AWS Certified Solutions Architect – Associate",
       summary:
-        "Validated skills in AWS services, application deployment, security, and cloud-native development.",
-      link: "/docs/aws-developer.pdf",
-    },
-    {
-      title: "Terraform Associate",
-      summary:
-        "Certified in Infrastructure as Code concepts, state management, and workflows.",
-      link: "/docs/terraform-cert.pdf",
-    },
-    {
-      title: "Kubernetes Fundamentals",
-      summary:
-        "Demonstrated understanding of Kubernetes workloads, networking, and operations.",
-      link: "/docs/kubernetes-cert.pdf",
-    },
+        "Validated expertise in designing secure, scalable, and cost-optimized architectures on AWS, including compute, storage, networking, and IAM best practices.",
+      link: "https://www.credly.com/badges/698442cb-3932-4ce1-bf60-8a02fd5a7e5c/linked_in?t=rvxj4h",
+    }
+//     {
+//       title: "Terraform Associate",
+//       summary:
+//         "Certified in Infrastructure as Code concepts, state management, and workflows.",
+//       link: "/docs/terraform-cert.pdf",
+//     },
+//     {
+//       title: "Kubernetes Fundamentals",
+//       summary:
+//         "Demonstrated understanding of Kubernetes workloads, networking, and operations.",
+//       link: "/docs/kubernetes-cert.pdf",
+//     },
   ],
 };

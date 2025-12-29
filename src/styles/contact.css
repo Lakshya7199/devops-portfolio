@@ -46,3 +46,9 @@
   color: #9ca3af;
   font-size: 13px;
 }
+
+.contact-cards {
+  pointer-events: auto !important;
+  cursor: pointer;
+  z-index: 10;
+}

@@ -2,19 +2,25 @@ export const achievementsData = {
   title: "Achievements & Awards",
   description: "Key professional milestones and recognitions",
   intro:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "",
   items: [
     {
-      title: "Best Performer Award",
+      title: "Super Ninja - Fish Eye",
       summary:
-        "Recognized for consistent delivery, ownership, and production stability improvements.",
-      link: "/docs/best-performer.pdf",
+        "Fish Eye for exceptional multitasking, attention to detail, and consistently delivering high-impact work with minimal errors.",
+      link: "/docs/Lakshya Datir - Super Ninja.pdf",
     },
     {
-      title: "Operational Excellence Award",
+      title: "Sidekick Salute - Consider it Done",
       summary:
-        "Awarded for improving monitoring, alerting, and system reliability.",
-      link: "/docs/operational-excellence.pdf",
+        "Received the Sidekick Salute award for consistently going above and beyond to support cross-functional teams with exceptional dedication.",
+      link: "/docs/Lakshya Datir - SideKick Salute.pdf",
+    },
+{
+      title: "Team Awards - Operational Excellence",
+      summary:
+        "Recognized with a Team Award for collaborative excellence, shared ownership, and consistently delivering high-impact results together.",
+      link: "/docs/TeamAwards.pdf",
     },
   ],
 };
