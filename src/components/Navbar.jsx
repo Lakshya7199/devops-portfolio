@@ -1,16 +1,21 @@
-import "../styles/navbar.css"
+// import homeLogo from "../assets/home.png";
+import "../styles/navbar.css";
+import { Link } from "react-router-dom";
 
-function Navbar() {
+const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1 className="logo">Lakshya</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <div className="nav-left">
+        {/* <img src={homeLogo} alt="Home" className="nav-logo" /> */}
+        <span className="brand">🏠</span>
+      </div>
+
+      <ul className="nav-links">
+        <li>Home</li>
+        <li>Contact</li>
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

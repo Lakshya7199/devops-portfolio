@@ -46,6 +46,27 @@ const Home = () => {
           onClose={() => setModalData(null)}
         />
       )}
+    <section className="philosophy fade-in">
+      <h2>How I Approach DevOps</h2>
+      <p>
+        I design and operate systems with a focus on <strong>reliability</strong>,
+        <strong> security</strong>, and <strong>automation</strong>. My approach
+        emphasizes Infrastructure as Code, least-privilege access, production-grade
+        observability, and eliminating manual operational work wherever possible.
+      </p>
+    </section>
+    <section className="tools">
+      <h2>Core Tooling</h2>
+      <div className="tools-grid">
+        <span>AWS (EKS, IAM, S3, CloudFront, Lambda)</span>
+        <span>Terraform (IaC, State, Modules)</span>
+        <span>Docker & Kubernetes</span>
+        <span>GitHub Actions (CI/CD)</span>
+        <span>Prometheus & Grafana</span>
+        <span>OpenSearch</span>
+      </div>
+    </section>
+
     </>
   );
 };

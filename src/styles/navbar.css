@@ -74,3 +74,12 @@
     gap: 18px;
   }
 }
+
+.brand {
+  font-size: 30px;          /* perfect navbar size */
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+

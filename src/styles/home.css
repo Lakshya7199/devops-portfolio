@@ -65,3 +65,40 @@
     transform: translateY(0);
   }
 }
+
+.philosophy {
+  max-width: 900px;
+  margin: 80px auto 40px;
+  text-align: center;
+}
+
+.philosophy h2 {
+  margin-bottom: 14px;
+}
+
+.philosophy p {
+  color: #94a3b8;
+  line-height: 1.8;
+}
+
+.tools {
+  max-width: 900px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tools-grid span {
+  background: rgba(255,255,255,0.05);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  color: #e5e7eb;
+}
