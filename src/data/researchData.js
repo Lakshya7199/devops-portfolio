@@ -9,18 +9,12 @@ export const researchData = {
       summary:
         "Implemented fine-grained access control for Amazon OpenSearch using SAML integration with IAM Identity Center to replace shared credentials and improve security posture.",
       link: "/docs/AWS OpenSearch Integration with IAM Identity Center.pdf",
+    },
+    {
+      title: "Automate Website Testing with AWS Synthetic Canaries",
+      summary:
+        "Automate repetitive website tests using AWS CloudWatch Synthetic Canaries, which mimic real user behavior on a schedule, detect failures early, capture screenshots, and alert you—saving time and avoiding manual testing.",
+      link: "https://medium.com/@lakshya.datir2001/stop-manually-testing-your-website-automate-it-with-aws-synthetic-canaries-6b18b8e26dd5?postPublishedType=initial",
     }
-//     {
-//       title: "API Abuse Detection using OpenSearch",
-//       summary:
-//         "Designed a log-based detection mechanism to identify high-frequency API abuse patterns and trigger automated alerts using SNS and Lambda.",
-//       link: "/docs/api-abuse-detection.pdf",
-//     },
-//     {
-//       title: "Glue Workflow Orchestration",
-//       summary:
-//         "Researched Step Functions orchestration patterns to ensure Glue workflows complete successfully before marking execution as succeeded.",
-//       link: "/docs/glue-workflow.pdf",
-//     },
   ],
 };
